@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rodrigo Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Rodrigo <span>Nunes</span>
+            </div>
+            <div class="links">
+                <a href="#" id="sobre-link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Sobre</a>
+                <a href="https://rodrigo34892.github.io/port-skils" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Skils</a>
+                <a href="https://rodrigo34892.github.io/port-projetos/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Projetos</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#" id="sobre-link-dropdown">Sobre</a>
+                <a href="https://rodrigo34892.github.io/port-skils/" target="_blank">Skils</a>
+                <a href="https://rodrigo34892.github.io/port-projetos/" target="_blank">projetos </a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="imagem/rodrigoo.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Olá, eu sou o <span>Rodrigo</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    Habilidade em <span class="typewriter-text"></span><label>|</label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    Atualmente, tenho 16 anos e estou cursando o técnico em Informática, com experiência prática na área como suporte de TI. Desenvolvi uma base sólida em programação, permitindo enfrentar desafios e colaborar em projetos. Estou sempre em busca de aprender mais.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/rodrigo34892" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rodrigo-nunes-dos-santos-9a045b314/?trk=opento_sprofile_topcard" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="window.location.href='https://rodrigo34892.github.io/port-mensagem/'">Contato</button>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+
+        document.getElementById('sobre-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            location.reload();
+        });
+
+        document.getElementById('sobre-link-dropdown').addEventListener('click', function(event) {
+            event.preventDefault();
+            location.reload();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
